@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import Search from './search';
 
 
 class Movies extends Component {
@@ -22,6 +23,7 @@ class Movies extends Component {
     render() {
         return (
             <div>
+                <Search/>
                 <h1>Movies</h1>
                 {this.state.movies.map(movie => <MovieCard key={movie.id} movie={movie} />)};
             </div>

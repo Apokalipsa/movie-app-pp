@@ -28,9 +28,9 @@ class Movie extends Component {
         const base_url = 'https://image.tmdb.org/t/p/original';
         return (
             <div>
-                <Link to='/'> Back to movies</Link>
+                <Link className="btn btn-primary mt-2" to='/'> Back to movies</Link>
                 <h1>{this.state.movie.original_title}</h1>
-                <img src={`${base_url}${this.state.movie.poster_path}`} />
+                <img src={`${base_url}${this.state.movie.poster_path}`} alt="poster" />
 
             </div>
         );
