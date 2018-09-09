@@ -8,8 +8,8 @@ class App extends Component {
     return (
       <div className="App container">
         <Switch>
-          <Route exact path='/' component={Movies} />
-          <Route exact path='/movies/:id' component={Movie} />
+          <Route exact path='/' component={Movies}/>
+          <Route exact path='/movies/:id' component={Movie}/>
         </Switch>
       </div>
     );
